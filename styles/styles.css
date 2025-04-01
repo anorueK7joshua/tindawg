@@ -1,0 +1,236 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.color {
+    background: linear-gradient(300deg, #50d2fd, #5c3ad6, #90caff);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+#header {
+    width: 100%;
+    height: 93vh;
+    display: flex;
+}
+h1 {
+    font-size: 3.2rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.part1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.part2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+.apple, .google {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.appleimg, .googleimg {
+    position: absolute;
+    left: 40px;
+    height: 20px;
+}
+.applebutton, .googlebutton {
+    height: 50px;
+    width: 200px;
+    font-size: 1rem;
+    border-radius: 7px;
+} 
+.applebutton {
+    background-color: white;
+    border: none;
+}
+.applebutton:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+.googlebutton {
+    border-color: black;
+    background-color: transparent;
+}
+.googlebutton:hover {
+    opacity: 0.5;
+}
+#body {
+    margin: 60px;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+.easy {
+    display: flex;
+    gap: 15px;
+}
+.easyicon {
+    position: relative;
+}
+.easytext > *{
+    margin-bottom: 10px;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(128, 128, 128, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.box > img {
+    width: 30px;
+}
+#testimonial {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(128, 128, 128, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1rem;
+}
+.h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+}
+.imgpebble > img {
+    border-radius: 50%;
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.imgpebble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.companies {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 210px;
+}
+.companies > img {
+    margin-top: 50px;
+    width: 160px;
+    height: 30px;
+}
+#footer {
+    height: 20vh;
+    width: 100%;
+}
+@media (max-width: 700px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #header {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        width: 100%;
+    }
+    .part2 {
+        padding: 30px;
+        padding-left: 60px;
+    }
+    .part2 > img {
+        width: 300px;
+    }
+    .part1 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 80%;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .applebutton, .googlebutton {
+        width: 80%;
+        margin-left: 60px;
+    }
+    .apple, .google {
+        position: relative;
+    }
+    .appleimg, .googleimg {
+        position: absolute;
+        left: 100px;
+    }
+    h1 {
+        margin-left: 60px;
+    }
+    #body {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: 70%;
+    }
+    #testimonial {
+        display: flex;
+        height: 80%;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+    }
+    .h3 {
+        width: 80%;
+    }
+    .companies {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 40px;
+    }
+    .companies > img {
+        margin: 0%;
+        padding: 0%;
+    }
+
+}
